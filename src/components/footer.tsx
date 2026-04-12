@@ -49,7 +49,7 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1 md:pr-4">
             <div className="flex items-center gap-2">
               <GraduationCap className="size-7 text-blue-400" />
-              <span className="text-lg font-bold text-white">TutorUSA</span>
+              <span className="text-lg font-bold text-white">TutorSync</span>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-gray-400">
               Connecting students with the best tutors across America.
@@ -172,7 +172,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-center gap-4 border-t border-gray-800 pt-8 sm:flex-row sm:justify-between">
           <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} TutorUSA. All rights reserved.
+            &copy; {new Date().getFullYear()} TutorSync. All rights reserved.
           </p>
           <p className="text-xs text-gray-600">
             Made with care for students everywhere

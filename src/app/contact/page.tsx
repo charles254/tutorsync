@@ -3,8 +3,8 @@ import { Mail, MapPin, Clock } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Get in Touch with TutorUSA",
-  description: "Have questions about TutorUSA? Contact our team for support with finding tutors, account issues, or partnership inquiries.",
+  title: "Contact Us - Get in Touch with TutorSync",
+  description: "Have questions about TutorSync? Contact our team for support with finding tutors, account issues, or partnership inquiries.",
 };
 
 export default function ContactPage() {
@@ -20,7 +20,7 @@ export default function ContactPage() {
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {[
-            { icon: Mail, title: "Email", detail: "support@tutorusa.com", sub: "We respond within 24 hours" },
+            { icon: Mail, title: "Email", detail: "support@tutorsync.net", sub: "We respond within 24 hours" },
             { icon: MapPin, title: "Location", detail: "United States", sub: "Serving all 50 states" },
             { icon: Clock, title: "Hours", detail: "Mon-Fri 9am-6pm EST", sub: "Weekend support available" },
           ].map((item) => (

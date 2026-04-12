@@ -35,7 +35,7 @@ export function Navbar() {
             <GraduationCap className="size-5 text-white" />
           </div>
           <span className="text-xl font-bold tracking-tight text-gray-900">
-            Tutor<span className="text-blue-600">USA</span>
+            Tutor<span className="text-blue-600">Sync</span>
           </span>
         </Link>
 

@@ -22,13 +22,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const name = subjectData.name;
 
   return {
-    title: `${name} Tutors - Find Expert ${name} Tutoring | TutorUSA`,
+    title: `${name} Tutors - Find Expert ${name} Tutoring | TutorSync`,
     description: getMetaDescription({ subject: name, city: "", state: "", tutorCount: 500, avgPrice: 35 }),
     alternates: {
-      canonical: `https://tutorusa.com/tutors/${subject}`,
+      canonical: `https://tutorsync.net/tutors/${subject}`,
     },
     openGraph: {
-      title: `${name} Tutors | TutorUSA`,
+      title: `${name} Tutors | TutorSync`,
       description: `Find expert ${name} tutors across the USA. Affordable rates starting at $20/hr.`,
     },
   };
@@ -174,9 +174,9 @@ export default async function SubjectPage({ params }: Props) {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://tutorusa.com/" },
-          { "@type": "ListItem", position: 2, name: "Tutors", item: "https://tutorusa.com/tutors" },
-          { "@type": "ListItem", position: 3, name: `${name} Tutors`, item: `https://tutorusa.com/tutors/${subject}` },
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://tutorsync.net/" },
+          { "@type": "ListItem", position: 2, name: "Tutors", item: "https://tutorsync.net/tutors" },
+          { "@type": "ListItem", position: 3, name: `${name} Tutors`, item: `https://tutorsync.net/tutors/${subject}` },
         ],
       }} />
     </div>

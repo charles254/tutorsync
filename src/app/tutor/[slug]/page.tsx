@@ -35,10 +35,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${tutor.user.name} - ${subjectNames} Tutor in ${tutor.city}, ${tutor.state}`,
     description: `${tutor.user.name} is a verified ${subjectNames} tutor in ${tutor.city}, ${tutor.state}. $${tutor.hourlyRate}/hr. ${tutor.experience} years experience. ${tutor.firstLessonFree ? "First lesson free!" : ""}`,
     alternates: {
-      canonical: `https://tutorusa.com/tutor/${slug}`,
+      canonical: `https://tutorsync.net/tutor/${slug}`,
     },
     openGraph: {
-      title: `${tutor.user.name} - ${subjectNames} Tutor | TutorUSA`,
+      title: `${tutor.user.name} - ${subjectNames} Tutor | TutorSync`,
       description: `Book ${tutor.user.name} for ${subjectNames} tutoring in ${tutor.city}. $${tutor.hourlyRate}/hr.`,
     },
   };

@@ -3,7 +3,7 @@ import subjects from "@/data/subjects.json";
 import cities from "@/data/cities.json";
 import { prisma } from "@/lib/db";
 
-const BASE_URL = "https://tutorusa.com";
+const BASE_URL = "https://tutorsync.net";
 const levels = ["elementary", "middle-school", "high-school", "college", "adult"];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

@@ -55,14 +55,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${levelLabel} ${subjectName} Tutors in ${cityName} | TutorUSA`,
+    title: `${levelLabel} ${subjectName} Tutors in ${cityName} | TutorSync`,
     description: `${levelLabel} ${subjectName} tutoring in ${cityName}, ${stateName}. Find verified ${levelLabel.toLowerCase()} level ${subjectName.toLowerCase()} tutors near you. Affordable rates, free first lessons available.`,
     alternates: {
-      canonical: `https://tutorusa.com/tutors/${subject}/${city}/${level}`,
+      canonical: `https://tutorsync.net/tutors/${subject}/${city}/${level}`,
     },
     robots: tutorCount < 3 ? { index: false, follow: true } : undefined,
     openGraph: {
-      title: `${levelLabel} ${subjectName} Tutors in ${cityName} | TutorUSA`,
+      title: `${levelLabel} ${subjectName} Tutors in ${cityName} | TutorSync`,
       description: `Find ${levelLabel.toLowerCase()} level ${subjectName.toLowerCase()} tutors in ${cityName}, ${stateName}.`,
     },
   };
@@ -215,11 +215,11 @@ export default async function SubjectCityLevelPage({ params }: Props) {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://tutorusa.com/" },
-          { "@type": "ListItem", position: 2, name: "Tutors", item: "https://tutorusa.com/tutors" },
-          { "@type": "ListItem", position: 3, name: `${subjectName} Tutors`, item: `https://tutorusa.com/tutors/${subject}` },
-          { "@type": "ListItem", position: 4, name: cityName, item: `https://tutorusa.com/tutors/${subject}/${city}` },
-          { "@type": "ListItem", position: 5, name: levelLabel, item: `https://tutorusa.com/tutors/${subject}/${city}/${level}` },
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://tutorsync.net/" },
+          { "@type": "ListItem", position: 2, name: "Tutors", item: "https://tutorsync.net/tutors" },
+          { "@type": "ListItem", position: 3, name: `${subjectName} Tutors`, item: `https://tutorsync.net/tutors/${subject}` },
+          { "@type": "ListItem", position: 4, name: cityName, item: `https://tutorsync.net/tutors/${subject}/${city}` },
+          { "@type": "ListItem", position: 5, name: levelLabel, item: `https://tutorsync.net/tutors/${subject}/${city}/${level}` },
         ],
       }} />
     </div>

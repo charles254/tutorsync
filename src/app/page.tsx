@@ -173,9 +173,9 @@ export default function HomePage() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "Organization",
-        name: "TutorUSA",
-        url: "https://tutorusa.com",
-        logo: "https://tutorusa.com/logo.png",
+        name: "TutorSync",
+        url: "https://tutorsync.net",
+        logo: "https://tutorsync.net/logo.png",
         description: "Find expert tutors across the USA in 200+ subjects. Verified reviews, affordable rates, and free first lessons.",
         sameAs: [],
         contactPoint: {
@@ -188,13 +188,13 @@ export default function HomePage() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "WebSite",
-        name: "TutorUSA",
-        url: "https://tutorusa.com",
+        name: "TutorSync",
+        url: "https://tutorsync.net",
         potentialAction: {
           "@type": "SearchAction",
           target: {
             "@type": "EntryPoint",
-            urlTemplate: "https://tutorusa.com/tutors?q={search_term_string}",
+            urlTemplate: "https://tutorsync.net/tutors?q={search_term_string}",
           },
           "query-input": "required name=search_term_string",
         },

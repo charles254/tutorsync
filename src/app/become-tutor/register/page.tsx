@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Register as a Tutor",
   description:
-    "Create your tutor profile on TutorUSA and start teaching students across America.",
+    "Create your tutor profile on TutorSync and start teaching students across America.",
 };
 
 export default async function TutorRegisterPage() {

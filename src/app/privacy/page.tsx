@@ -2,8 +2,8 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | TutorUSA",
-  description: "TutorUSA Privacy Policy. Learn how we collect, use, and protect your personal information on our tutoring platform.",
+  title: "Privacy Policy | TutorSync",
+  description: "TutorSync Privacy Policy. Learn how we collect, use, and protect your personal information on our tutoring platform.",
 };
 
 export default function PrivacyPage() {
@@ -34,13 +34,13 @@ export default function PrivacyPage() {
         <p>You have the right to access, correct, or delete your personal information. You may also opt out of marketing communications at any time. Contact us to exercise these rights.</p>
 
         <h2>7. Children&apos;s Privacy</h2>
-        <p>TutorUSA is not directed to children under 13. We do not knowingly collect information from children under 13 without parental consent.</p>
+        <p>TutorSync is not directed to children under 13. We do not knowingly collect information from children under 13 without parental consent.</p>
 
         <h2>8. Changes to This Policy</h2>
         <p>We may update this Privacy Policy periodically. We will notify you of significant changes by posting the updated policy on this page.</p>
 
         <h2>9. Contact Us</h2>
-        <p>If you have questions about this Privacy Policy, contact us at privacy@tutorusa.com.</p>
+        <p>If you have questions about this Privacy Policy, contact us at privacy@tutorsync.net.</p>
       </div>
     </div>
   );

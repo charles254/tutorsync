@@ -16,7 +16,7 @@ export default function AuthLayout({
           <GraduationCap className="size-6 text-white" />
         </div>
         <span className="text-2xl font-bold tracking-tight text-gray-900">
-          Tutor<span className="text-blue-600">USA</span>
+          Tutor<span className="text-blue-600">Sync</span>
         </span>
       </Link>
       {children}

@@ -115,7 +115,7 @@ const faqTemplates: Array<(v: PageVariables) => FAQ> = [
   }),
   (v) => ({
     question: `Where can I find ${v.subject} tutoring in ${v.city}, ${v.state}?`,
-    answer: `You can find ${v.tutorCount} ${v.subject} tutors in ${v.city} right here on TutorUSA. Browse tutor profiles, read student reviews, and book sessions online. Many tutors offer both in-person and online sessions for maximum flexibility.`,
+    answer: `You can find ${v.tutorCount} ${v.subject} tutors in ${v.city} right here on TutorSync. Browse tutor profiles, read student reviews, and book sessions online. Many tutors offer both in-person and online sessions for maximum flexibility.`,
   }),
   (v) => ({
     question: `How do I choose the best ${v.subject} tutor in ${v.city}?`,
@@ -139,7 +139,7 @@ const faqTemplates: Array<(v: PageVariables) => FAQ> = [
   }),
   (v) => ({
     question: `Are ${v.subject} tutors in ${v.city} qualified?`,
-    answer: `All ${v.subject} tutors on TutorUSA in ${v.city} have verified qualifications and experience. Many hold advanced degrees in their subject area and have years of professional teaching experience. Student reviews and ratings help you evaluate each tutor's effectiveness.`,
+    answer: `All ${v.subject} tutors on TutorSync in ${v.city} have verified qualifications and experience. Many hold advanced degrees in their subject area and have years of professional teaching experience. Student reviews and ratings help you evaluate each tutor's effectiveness.`,
   }),
 ];
 

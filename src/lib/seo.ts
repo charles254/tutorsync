@@ -36,7 +36,7 @@ type JsonLdObject = Record<string, unknown>;
 export function generateMetadata(params: SEOParams): Metadata {
   const { subject, subjectSlug, city, citySlug, state, stateSlug, stateCode, tutorCount, avgPrice } = params;
 
-  const title = `Best ${subject} Tutors in ${city}, ${stateCode ?? state} | TutorUSA`;
+  const title = `Best ${subject} Tutors in ${city}, ${stateCode ?? state} | TutorSync`;
   const description = getMetaDescription({
     subject,
     city,
@@ -45,7 +45,7 @@ export function generateMetadata(params: SEOParams): Metadata {
     tutorCount,
     avgPrice,
   });
-  const canonicalUrl = `https://tutorusa.com/tutors/${subjectSlug}/${stateSlug}/${citySlug}`;
+  const canonicalUrl = `https://tutorsync.net/tutors/${subjectSlug}/${stateSlug}/${citySlug}`;
 
   return {
     title,
@@ -57,7 +57,7 @@ export function generateMetadata(params: SEOParams): Metadata {
       title,
       description,
       url: canonicalUrl,
-      siteName: "TutorUSA",
+      siteName: "TutorSync",
       type: "website",
       locale: "en_US",
     },
@@ -106,7 +106,7 @@ function generateEducationalOrganization(options: StructuredDataOptions): JsonLd
   const schema: JsonLdObject = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
-    name: `TutorUSA - ${subject} Tutoring in ${city}`,
+    name: `TutorSync - ${subject} Tutoring in ${city}`,
     description: `Find ${tutorCount} qualified ${subject} tutors in ${city}, ${state}. Personalized tutoring starting at $${avgPrice}/hour.`,
     url,
     address: {
@@ -172,7 +172,7 @@ function generateBreadcrumbListSchema(options: StructuredDataOptions): JsonLdObj
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `https://tutorusa.com${item.href}`,
+      item: `https://tutorsync.net${item.href}`,
     })),
   };
 }
@@ -187,8 +187,8 @@ function generateAggregateRating(options: StructuredDataOptions): JsonLdObject {
     description: `Professional ${subject} tutoring services in ${city}. ${tutorCount} verified tutors available.`,
     provider: {
       "@type": "Organization",
-      name: "TutorUSA",
-      url: "https://tutorusa.com",
+      name: "TutorSync",
+      url: "https://tutorsync.net",
     },
     areaServed: {
       "@type": "City",

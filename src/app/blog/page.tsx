@@ -4,8 +4,8 @@ import { BookOpen, Clock } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog - Tutoring Tips & Education Resources | TutorUSA",
-  description: "Expert tutoring tips, study strategies, and education resources from TutorUSA. Help your child succeed with our guides and articles.",
+  title: "Blog - Tutoring Tips & Education Resources | TutorSync",
+  description: "Expert tutoring tips, study strategies, and education resources from TutorSync. Help your child succeed with our guides and articles.",
 };
 
 const blogPosts = [
@@ -60,7 +60,7 @@ export default function BlogPage() {
 
       <div className="py-12">
         <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
-          TutorUSA Blog
+          TutorSync Blog
         </h1>
         <p className="text-xl text-gray-600 mb-12">
           Expert tips, study strategies, and education resources for students and parents.

@@ -3,8 +3,8 @@ import { GraduationCap, Users, MapPin, Star } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About TutorUSA - Our Mission & Story",
-  description: "TutorUSA connects students with verified tutors across the USA. Learn about our mission to make quality education accessible to everyone.",
+  title: "About TutorSync - Our Mission & Story",
+  description: "TutorSync connects students with verified tutors across the USA. Learn about our mission to make quality education accessible to everyone.",
 };
 
 export default function AboutPage() {
@@ -14,10 +14,10 @@ export default function AboutPage() {
 
       <div className="py-12">
         <h1 className="text-4xl font-extrabold text-gray-900 mb-6">
-          About <span className="text-blue-600">TutorUSA</span>
+          About <span className="text-blue-600">TutorSync</span>
         </h1>
         <p className="text-xl text-gray-600 leading-relaxed mb-8">
-          TutorUSA is the leading tutoring marketplace connecting students with
+          TutorSync is the leading tutoring marketplace connecting students with
           qualified, verified tutors across the United States. Our mission is to
           make quality education accessible, affordable, and personalized for every learner.
         </p>
@@ -40,7 +40,7 @@ export default function AboutPage() {
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Our Story</h2>
         <p className="text-gray-600 leading-relaxed mb-4">
           Founded with a simple belief: every student deserves access to great
-          tutoring, regardless of where they live. TutorUSA bridges the gap between
+          tutoring, regardless of where they live. TutorSync bridges the gap between
           students seeking academic support and skilled educators ready to share
           their knowledge.
         </p>

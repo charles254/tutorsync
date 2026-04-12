@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "TutorUSA - Find the Best Tutors Near You",
-    template: "%s | TutorUSA",
+    default: "TutorSync - Find the Best Tutors Near You",
+    template: "%s | TutorSync",
   },
   description:
     "Connect with 10,000+ verified tutors across the USA. Find expert tutoring in math, science, languages, music, test prep, and more. First lesson free.",
@@ -35,14 +35,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "TutorUSA",
-    title: "TutorUSA - Find the Best Tutors Near You",
+    siteName: "TutorSync",
+    title: "TutorSync - Find the Best Tutors Near You",
     description:
       "Connect with 10,000+ verified tutors across the USA. Expert tutoring in 200+ subjects.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TutorUSA - Find the Best Tutors Near You",
+    title: "TutorSync - Find the Best Tutors Near You",
     description:
       "Connect with 10,000+ verified tutors across the USA. Expert tutoring in 200+ subjects.",
   },

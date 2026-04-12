@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Become a Tutor - Share Your Knowledge & Earn",
   description:
-    "Join TutorUSA as a tutor. Set your own rates, choose your schedule, and teach students across America. Free to join.",
+    "Join TutorSync as a tutor. Set your own rates, choose your schedule, and teach students across America. Free to join.",
 };
 
 const benefits = [
