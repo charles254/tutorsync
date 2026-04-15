@@ -1,5 +1,5 @@
 import { Breadcrumbs } from "@/components/breadcrumbs";
-import { JsonLd } from "@/components/json-ld";
+import { JsonLd } from "@/lib/safe-jsonld";
 import Link from "next/link";
 import { BookOpen, Clock } from "lucide-react";
 import type { Metadata } from "next";

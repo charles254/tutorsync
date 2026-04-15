@@ -1,5 +1,5 @@
 import { Breadcrumbs } from "@/components/breadcrumbs";
-import { JsonLd } from "@/components/json-ld";
+import { JsonLd } from "@/lib/safe-jsonld";
 import { GraduationCap, Users, MapPin, Star } from "lucide-react";
 import type { Metadata } from "next";
 
