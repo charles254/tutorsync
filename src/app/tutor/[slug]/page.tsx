@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://tutorsync.net/tutor/${slug}`,
     },
     openGraph: {
-      title: `${tutor.user.name} - ${subjectNames} Tutor | TutorSync`,
+      title: `${tutor.user.name} - ${subjectNames} Tutor`,
       description: `Book ${tutor.user.name} for ${subjectNames} tutoring in ${tutor.city}. $${tutor.hourlyRate}/hr.`,
     },
   };

@@ -2,7 +2,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | TutorSync",
+  title: "Privacy Policy",
   description: "TutorSync Privacy Policy. Learn how we collect, use, and protect your personal information on our tutoring platform.",
 };
 

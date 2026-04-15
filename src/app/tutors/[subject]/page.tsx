@@ -22,13 +22,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const name = subjectData.name;
 
   return {
-    title: `${name} Tutors - Find Expert ${name} Tutoring | TutorSync`,
-    description: getMetaDescription({ subject: name, city: "", state: "", tutorCount: 500, avgPrice: 35 }),
+    title: `${name} Tutors - Find Expert ${name} Tutoring`,
+    description: `Find expert ${name} tutors across the USA. ${name} tutoring from $35/hr. 500+ experienced tutors with verified reviews. Online and in-person options available.`,
     alternates: {
       canonical: `https://tutorsync.net/tutors/${subject}`,
     },
     openGraph: {
-      title: `${name} Tutors | TutorSync`,
+      title: `${name} Tutors - Find Expert ${name} Tutoring`,
       description: `Find expert ${name} tutors across the USA. Affordable rates starting at $20/hr.`,
     },
   };

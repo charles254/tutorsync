@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     robots: tutorCount < 3 ? { index: false, follow: true } : undefined,
     openGraph: {
-      title: `${subjectName} Tutors in ${cityName} | TutorSync`,
+      title: `${subjectName} Tutors in ${cityName}`,
       description: `Find the best ${subjectName} tutors in ${cityName}, ${stateName}. Verified reviews, affordable rates.`,
     },
   };

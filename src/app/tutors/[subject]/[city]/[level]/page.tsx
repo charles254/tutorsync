@@ -55,14 +55,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${levelLabel} ${subjectName} Tutors in ${cityName} | TutorSync`,
+    title: `${levelLabel} ${subjectName} Tutors in ${cityName}`,
     description: `${levelLabel} ${subjectName} tutoring in ${cityName}, ${stateName}. Find verified ${levelLabel.toLowerCase()} level ${subjectName.toLowerCase()} tutors near you. Affordable rates, free first lessons available.`,
     alternates: {
       canonical: `https://tutorsync.net/tutors/${subject}/${city}/${level}`,
     },
     robots: tutorCount < 3 ? { index: false, follow: true } : undefined,
     openGraph: {
-      title: `${levelLabel} ${subjectName} Tutors in ${cityName} | TutorSync`,
+      title: `${levelLabel} ${subjectName} Tutors in ${cityName}`,
       description: `Find ${levelLabel.toLowerCase()} level ${subjectName.toLowerCase()} tutors in ${cityName}, ${stateName}.`,
     },
   };

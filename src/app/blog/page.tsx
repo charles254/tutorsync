@@ -4,7 +4,7 @@ import { BookOpen, Clock } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog - Tutoring Tips & Education Resources | TutorSync",
+  title: "Blog - Tutoring Tips & Education Resources",
   description: "Expert tutoring tips, study strategies, and education resources from TutorSync. Help your child succeed with our guides and articles.",
 };
 

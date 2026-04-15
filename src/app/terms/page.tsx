@@ -2,7 +2,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | TutorSync",
+  title: "Terms of Service",
   description: "Read the TutorSync Terms of Service. Understand your rights and obligations when using our tutoring marketplace platform.",
 };
 
