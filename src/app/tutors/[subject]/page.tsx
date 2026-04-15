@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${name} Tutors - Find Expert ${name} Tutoring`,
       description: `Find expert ${name} tutors across the USA. Affordable rates starting at $20/hr.`,
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: `${name} Tutors - TutorSync` }],
     },
   };
 }

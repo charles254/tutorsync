@@ -33,15 +33,51 @@ export default function ContactPage() {
           ))}
         </div>
 
+        {/* Trust Signals */}
+        <div className="grid grid-cols-3 gap-6 mb-12">
+          <div className="text-center p-6 bg-blue-50 rounded-xl">
+            <p className="text-3xl font-bold text-blue-700">10,000+</p>
+            <p className="text-gray-600 mt-1">Verified Tutors</p>
+          </div>
+          <div className="text-center p-6 bg-blue-50 rounded-xl">
+            <p className="text-3xl font-bold text-blue-700">200+</p>
+            <p className="text-gray-600 mt-1">Subjects Offered</p>
+          </div>
+          <div className="text-center p-6 bg-blue-50 rounded-xl">
+            <p className="text-3xl font-bold text-blue-700">50</p>
+            <p className="text-gray-600 mt-1">States Covered</p>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
         <div className="bg-gray-50 rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Common Questions</h2>
-          <p className="text-gray-600 mb-6">Before reaching out, check if your question is answered below.</p>
-          <ul className="space-y-3 text-gray-700">
-            <li className="flex gap-2"><span className="text-blue-600 font-bold">•</span> How do I find a tutor? Browse our subjects or search by city.</li>
-            <li className="flex gap-2"><span className="text-blue-600 font-bold">•</span> How much does tutoring cost? Rates vary — most tutors charge $20-$80/hr.</li>
-            <li className="flex gap-2"><span className="text-blue-600 font-bold">•</span> How do I become a tutor? Visit our Become a Tutor page to get started.</li>
-            <li className="flex gap-2"><span className="text-blue-600 font-bold">•</span> Is the first lesson free? Many tutors offer a free first lesson.</li>
-          </ul>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">How do I find a tutor?</h3>
+              <p className="text-gray-600">
+                Browse tutors by subject or city using our search pages. You can filter by location, price range, and experience level to find the perfect match. Each tutor profile includes reviews, qualifications, and availability.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">Is it free to sign up?</h3>
+              <p className="text-gray-600">
+                Yes, creating a TutorSync account is completely free for students and parents. You can browse tutor profiles, read reviews, and compare rates at no cost. You only pay when you book a lesson with a tutor.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">How does tutor matching work?</h3>
+              <p className="text-gray-600">
+                Our platform lets you search by subject, city, and level to find tutors who meet your needs. You can review each tutor&apos;s profile, qualifications, and student reviews before reaching out. Many tutors offer a free first lesson so you can find the right fit.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">What subjects are available?</h3>
+              <p className="text-gray-600">
+                TutorSync covers over 200 subjects, including math, science, English, foreign languages, test prep (SAT, ACT, GRE), music, coding, and more. Whether you need help with elementary school homework or college-level coursework, we have tutors who specialize in your area.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

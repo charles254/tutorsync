@@ -271,6 +271,14 @@ export default async function TutorProfilePage({ params }: Props) {
             worstRating: 1,
           },
         }),
+        makesOffer: tutor.subjects.map((ts: any) => ({
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: `${ts.subject.name} Tutoring`,
+            serviceType: "Private Tutoring",
+          },
+        })),
       }} />
     </div>
   );

@@ -64,6 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${levelLabel} ${subjectName} Tutors in ${cityName}`,
       description: `Find ${levelLabel.toLowerCase()} level ${subjectName.toLowerCase()} tutors in ${cityName}, ${stateName}.`,
       url: `https://tutorsync.net/tutors/${subject}/${city}/${level}`,
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: `${levelLabel} ${subjectName} Tutors in ${cityName} - TutorSync` }],
     },
   };
 }

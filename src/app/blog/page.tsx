@@ -126,6 +126,7 @@ export default function BlogPage() {
                 headline: post.title,
                 description: post.excerpt,
                 datePublished: new Date(post.date).toISOString().split("T")[0],
+                image: "https://tutorsync.net/opengraph-image",
                 author: {
                   "@type": "Organization",
                   name: "TutorSync",

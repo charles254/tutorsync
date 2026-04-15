@@ -46,6 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${subjectName} Tutors in ${cityName}`,
       description: `Find the best ${subjectName} tutors in ${cityName}, ${stateName}. Verified reviews, affordable rates.`,
       url: `https://tutorsync.net/tutors/${subject}/${city}`,
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: `${subjectName} Tutors in ${cityName} - TutorSync` }],
     },
   };
 }
@@ -193,6 +194,66 @@ export default async function SubjectCityPage({ params }: Props) {
         tutors={tutorCards}
         emptyMessage={`No ${subjectName} tutors found in ${cityName} yet. Try browsing all ${subjectName} tutors or a nearby city.`}
       />
+
+      {tutorCards.length === 0 && (
+        <div className="mt-8 space-y-8">
+          {/* Nearby city suggestions */}
+          {nearbyCities.length > 0 && (
+            <div className="p-6 bg-blue-50 rounded-xl">
+              <h2 className="text-xl font-semibold text-gray-900 mb-3">
+                Try {subjectName} Tutors in Nearby Cities
+              </h2>
+              <p className="text-gray-600 mb-4">
+                We don&apos;t have {subjectName.toLowerCase()} tutors listed in {cityName} yet, but you can find great options nearby.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {nearbyCities.map((c: { name: string; slug: string }) => (
+                  <Link
+                    key={c.slug}
+                    href={`/tutors/${subject}/${c.slug}`}
+                    className="px-4 py-2 bg-white border border-blue-200 rounded-full text-blue-700 hover:bg-blue-100 transition-colors text-sm font-medium"
+                  >
+                    {subjectName} in {c.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Alternative subject suggestions */}
+          {related.length > 0 && (
+            <div className="p-6 bg-gray-50 rounded-xl">
+              <h2 className="text-xl font-semibold text-gray-900 mb-3">
+                Explore Related Subjects in {cityName}
+              </h2>
+              <p className="text-gray-600 mb-4">
+                Looking for something similar? These related subjects may have tutors available in {cityName}.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {related.map((r) => (
+                  <Link
+                    key={r.slug}
+                    href={`/tutors/${r.slug}/${city}`}
+                    className="px-4 py-2 bg-white border border-gray-200 rounded-full text-gray-700 hover:text-blue-600 hover:border-blue-300 transition-colors text-sm font-medium"
+                  >
+                    {r.name} in {cityName}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Browse all link */}
+          <div className="text-center">
+            <Link
+              href={`/tutors/${subject}`}
+              className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+            >
+              Browse All {subjectName} Tutors Nationwide
+            </Link>
+          </div>
+        </div>
+      )}
 
       <SEOContent
         title={`${subjectName} Tutoring in ${cityName}, ${stateName}`}
