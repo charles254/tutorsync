@@ -103,7 +103,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <span className="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">{city.name}</span>
-                  <span className="block text-xs text-gray-400">{city.state}</span>
+                  <span className="block text-xs text-gray-500">{city.state}</span>
                 </div>
               </Link>
             ))}

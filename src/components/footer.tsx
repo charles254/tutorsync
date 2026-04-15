@@ -151,8 +151,9 @@ export function Footer() {
                 type="submit"
                 size="sm"
                 className="h-10 bg-blue-600 px-3 hover:bg-blue-700"
+                aria-label="Subscribe to newsletter"
               >
-                <Send className="size-4" />
+                <Send className="size-4" aria-hidden="true" />
               </Button>
             </form>
 
@@ -171,10 +172,10 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center gap-4 border-t border-gray-800 pt-8 sm:flex-row sm:justify-between">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-400">
             &copy; {new Date().getFullYear()} TutorSync. All rights reserved.
           </p>
-          <p className="text-xs text-gray-600">
+          <p className="text-xs text-gray-400">
             Made with care for students everywhere
           </p>
         </div>
