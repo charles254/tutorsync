@@ -79,10 +79,10 @@ export default async function SubjectPage({ params }: Props) {
     ? Math.round(tutorCards.reduce((s, t) => s + t.hourlyRate, 0) / tutorCards.length)
     : 35;
 
-  const pageVars = { subject: name, city: "", state: "", tutorCount: tutorCards.length, avgPrice };
-  const title = getPageTitle(pageVars);
-  const introText = getIntroText(pageVars).join("\n\n");
-  const faqs = getFAQs(pageVars);
+  const pageVars = { subject: name, city: "USA", state: "Nationwide", tutorCount: tutorCards.length, avgPrice };
+  const title = `Find Expert ${name} Tutors Across the USA`;
+  const introText = `Browse ${tutorCards.length} verified ${name} tutors nationwide. Whether you need online or in-person tutoring, our experts are ready to help you succeed. Rates start at $${avgPrice}/hr with many offering free first lessons.`;
+  const faqs = getFAQs({ ...pageVars, city: "your area", state: "the USA" });
   const relatedSlugs = getRelatedSubjects(subject);
   const related = relatedSlugs.map((slug) => {
     const s = subjects.find((sub) => sub.slug === slug);

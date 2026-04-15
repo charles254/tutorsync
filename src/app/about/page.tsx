@@ -4,7 +4,17 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About TutorSync - Our Mission & Story",
-  description: "TutorSync connects students with verified tutors across the USA. Learn about our mission to make quality education accessible to everyone.",
+  description:
+    "TutorSync connects students with verified tutors across the USA. Learn about our mission to make quality education accessible to everyone.",
+  alternates: {
+    canonical: "https://tutorsync.net/about",
+  },
+  openGraph: {
+    title: "About TutorSync - Our Mission & Story",
+    description:
+      "TutorSync connects students with verified tutors across the USA. Learn about our mission to make quality education accessible.",
+    url: "https://tutorsync.net/about",
+  },
 };
 
 export default function AboutPage() {

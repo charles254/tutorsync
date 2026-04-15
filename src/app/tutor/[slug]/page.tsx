@@ -31,15 +31,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const subjectNames = tutor.subjects.map((s: any) => s.subject.name).join(", ");
+  const expText = tutor.experience === 1 ? "1 year" : `${tutor.experience} years`;
   return {
-    title: `${tutor.user.name} - ${subjectNames} Tutor in ${tutor.city}, ${tutor.state}`,
-    description: `${tutor.user.name} is a verified ${subjectNames} tutor in ${tutor.city}, ${tutor.state}. $${tutor.hourlyRate}/hr. ${tutor.experience} years experience. ${tutor.firstLessonFree ? "First lesson free!" : ""}`,
+    title: `${tutor.user.name} - ${subjectNames} Tutor in ${tutor.city}`,
+    description: `${tutor.user.name} is a verified ${subjectNames} tutor in ${tutor.city}, ${tutor.state}. $${tutor.hourlyRate}/hr. ${expText} experience.${tutor.firstLessonFree ? " First lesson free!" : ""}`,
     alternates: {
       canonical: `https://tutorsync.net/tutor/${slug}`,
     },
     openGraph: {
-      title: `${tutor.user.name} - ${subjectNames} Tutor`,
-      description: `Book ${tutor.user.name} for ${subjectNames} tutoring in ${tutor.city}. $${tutor.hourlyRate}/hr.`,
+      title: `${tutor.user.name} - ${subjectNames} Tutor in ${tutor.city}`,
+      description: `Book ${tutor.user.name} for ${subjectNames} tutoring in ${tutor.city}, ${tutor.state}. $${tutor.hourlyRate}/hr.`,
+      url: `https://tutorsync.net/tutor/${slug}`,
     },
   };
 }
