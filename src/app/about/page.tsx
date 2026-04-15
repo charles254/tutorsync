@@ -1,4 +1,5 @@
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { JsonLd } from "@/components/json-ld";
 import { GraduationCap, Users, MapPin, Star } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -60,6 +61,42 @@ export default function AboutPage() {
           with the right tutor for your unique learning goals.
         </p>
       </div>
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          name: "About TutorSync",
+          description:
+            "TutorSync connects students with verified tutors across the USA. Learn about our mission to make quality education accessible.",
+          url: "https://tutorsync.net/about",
+          mainEntity: {
+            "@type": "Organization",
+            name: "TutorSync",
+            url: "https://tutorsync.net",
+            description:
+              "The leading tutoring marketplace connecting students with qualified, verified tutors across the United States.",
+            foundingDate: "2025",
+            numberOfEmployees: {
+              "@type": "QuantitativeValue",
+              value: 10000,
+              unitText: "tutors",
+            },
+            areaServed: {
+              "@type": "Country",
+              name: "United States",
+            },
+            knowsAbout: [
+              "Tutoring",
+              "Education",
+              "Online Learning",
+              "SAT Prep",
+              "Math Tutoring",
+              "Science Tutoring",
+            ],
+          },
+        }}
+      />
     </div>
   );
 }

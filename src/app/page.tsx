@@ -189,6 +189,7 @@ export default function HomePage() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         name: "TutorSync",
+        alternateName: ["Tutor Sync", "TutorSync.net"],
         url: "https://tutorsync.net",
         potentialAction: {
           "@type": "SearchAction",

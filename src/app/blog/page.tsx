@@ -1,11 +1,22 @@
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { JsonLd } from "@/components/json-ld";
 import Link from "next/link";
 import { BookOpen, Clock } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Blog - Tutoring Tips & Education Resources",
-  description: "Expert tutoring tips, study strategies, and education resources from TutorSync. Help your child succeed with our guides and articles.",
+  description:
+    "Expert tutoring tips, study strategies, and education resources from TutorSync. Help your child succeed with our guides and articles.",
+  alternates: {
+    canonical: "https://tutorsync.net/blog",
+  },
+  openGraph: {
+    title: "TutorSync Blog - Tutoring Tips & Education Resources",
+    description:
+      "Expert tutoring tips, study strategies, and education resources for students and parents.",
+    url: "https://tutorsync.net/blog",
+  },
 };
 
 const blogPosts = [
@@ -91,6 +102,39 @@ export default function BlogPage() {
           ))}
         </div>
       </div>
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "TutorSync Blog",
+          description:
+            "Expert tutoring tips, study strategies, and education resources for students and parents.",
+          url: "https://tutorsync.net/blog",
+          publisher: {
+            "@type": "Organization",
+            name: "TutorSync",
+            url: "https://tutorsync.net",
+          },
+          mainEntity: {
+            "@type": "ItemList",
+            itemListElement: blogPosts.map((post, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              item: {
+                "@type": "Article",
+                headline: post.title,
+                description: post.excerpt,
+                datePublished: new Date(post.date).toISOString().split("T")[0],
+                author: {
+                  "@type": "Organization",
+                  name: "TutorSync",
+                },
+              },
+            })),
+          },
+        }}
+      />
     </div>
   );
 }
