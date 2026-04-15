@@ -60,10 +60,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://tutorsync.net/tutors/${subject}/${city}/${level}`,
     },
-    robots: tutorCount < 3 ? { index: false, follow: true } : undefined,
     openGraph: {
       title: `${levelLabel} ${subjectName} Tutors in ${cityName}`,
       description: `Find ${levelLabel.toLowerCase()} level ${subjectName.toLowerCase()} tutors in ${cityName}, ${stateName}.`,
+      url: `https://tutorsync.net/tutors/${subject}/${city}/${level}`,
     },
   };
 }

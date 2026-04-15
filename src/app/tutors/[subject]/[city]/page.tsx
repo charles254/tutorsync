@@ -42,10 +42,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://tutorsync.net/tutors/${subject}/${city}`,
     },
-    robots: tutorCount < 3 ? { index: false, follow: true } : undefined,
     openGraph: {
       title: `${subjectName} Tutors in ${cityName}`,
       description: `Find the best ${subjectName} tutors in ${cityName}, ${stateName}. Verified reviews, affordable rates.`,
+      url: `https://tutorsync.net/tutors/${subject}/${city}`,
     },
   };
 }
