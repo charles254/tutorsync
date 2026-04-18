@@ -1,5 +1,5 @@
 import { Breadcrumbs } from "@/components/breadcrumbs";
-import { Mail, MapPin, Clock } from "lucide-react";
+import { Mail, MapPin, Clock, Phone } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,16 +18,21 @@ export default function ContactPage() {
           Have a question or need help? We&apos;d love to hear from you.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {[
-            { icon: Mail, title: "Email", detail: "support@tutorsync.net", sub: "We respond within 24 hours" },
+            { icon: Phone, title: "Phone", detail: "+1 (888) 888-8867", sub: "Mon-Fri 9am-6pm EST", href: "tel:+18888888867" },
+            { icon: Mail, title: "Email", detail: "support@tutorsync.net", sub: "We respond within 24 hours", href: "mailto:support@tutorsync.net" },
             { icon: MapPin, title: "Location", detail: "United States", sub: "Serving all 50 states" },
             { icon: Clock, title: "Hours", detail: "Mon-Fri 9am-6pm EST", sub: "Weekend support available" },
           ].map((item) => (
             <div key={item.title} className="p-6 bg-white border border-gray-200 rounded-xl text-center">
               <item.icon className="size-8 text-blue-600 mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900">{item.title}</h3>
-              <p className="text-gray-800 mt-1">{item.detail}</p>
+              {item.href ? (
+                <a href={item.href} className="text-gray-800 mt-1 inline-block hover:text-blue-600 transition-colors">{item.detail}</a>
+              ) : (
+                <p className="text-gray-800 mt-1">{item.detail}</p>
+              )}
               <p className="text-sm text-gray-500 mt-1">{item.sub}</p>
             </div>
           ))}
