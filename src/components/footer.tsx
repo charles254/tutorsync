@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { GraduationCap, Send } from "lucide-react";
+import { GraduationCap, Send, Phone, Mail } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
@@ -54,6 +54,26 @@ export function Footer() {
             <p className="mt-3 text-sm leading-relaxed text-gray-400">
               Connecting students with the best tutors across America.
             </p>
+            <ul className="mt-5 space-y-2.5">
+              <li>
+                <a
+                  href="tel:+18888888867"
+                  className="flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-white"
+                >
+                  <Phone className="size-4 text-blue-400" aria-hidden="true" />
+                  +1 (888) 888-8867
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:support@tutorsync.net"
+                  className="flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-white"
+                >
+                  <Mail className="size-4 text-blue-400" aria-hidden="true" />
+                  support@tutorsync.net
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div>
